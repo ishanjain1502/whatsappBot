@@ -34,7 +34,7 @@ client.on('message', async (msg) => {
       const media = await msg.downloadMedia();
       console.log('media found')
       if (media.mimetype.startsWith('image/')) {
-        const response = await analyzeImage(media.data);
+        const response = await analyzeImage(media.data, media.mimetype);
         console.log('response ==> ', response);
         msg.reply(response);
       }
