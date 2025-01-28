@@ -72,7 +72,8 @@ The WhatsApp bot is designed to analyze incoming images and reply with the conte
    ```
 4. **Run the Bot**:
    ```bash
-   npm start
+   node server.js
+   scan the QR code generated on screen, to login with your whatsapp account
    ```
 
 ---
